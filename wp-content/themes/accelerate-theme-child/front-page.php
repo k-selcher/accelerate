@@ -14,14 +14,18 @@
 
 get_header(); ?>
 
-<div id="primary" class="home-page hero-content">
-	<div class="main-content" role="main">
+<section class="home-page">
+	div class="site-content">
 		<?php while ( have_posts() ) : the_post(); ?>
+		<div class='homepage-hero'>
 			<?php the_content(); ?>
 				<a class="button" href="<?php echo site_url('/blog/') ?>">View Our Work</a>
+		</div>
 		<?php endwhile; // end of the loop. ?>
 	</div><!-- .main-content -->
-</div><!-- #primary -->
+</section><!-- #primary -->
+
+
 
 <!-- RECENT BLOG POST -->
 <section class="recent-posts">
@@ -33,6 +37,7 @@ get_header(); ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 					<h3><?php the_title(); ?></h3>
 					<?php the_excerpt(); ?>
+					<a href="<?php the_permalink(); ?>" class="read-more-link">Read More <span>
 				<?php endwhile; // end of the loop. ?>
 			<?php wp_reset_query(); // resets the altered query back to the original ?>
 		</div>
