@@ -131,7 +131,7 @@ aside.about-page-sidebar {
 }
 
 aside.about-page-sidebar img {
-  padding-right: 75px;
+  padding: 10px;
 }
 
 
@@ -139,6 +139,24 @@ aside.about-page-sidebar-text {
   width: 60%;
 }
 
+aside.about-page-sidebar-2 {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  flex-flow: row-reverse;
+  text-align: left;
+  margin-bottom: 70px;
+}
+
+aside.about-page-sidebar-2 img {
+  padding: 10px;
+  height: 90%;
+  width: 90%;
+}
+
+aside.about-page-sidebar-text-2 {
+  width: 60%;
+}
 
 div.about-contact{
   float:left;
