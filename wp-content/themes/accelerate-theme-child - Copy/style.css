@@ -47,22 +47,70 @@ display: block;
   font: 500 1em/1.75 'Open Sans', Arial, sans-serif;
 }
 
+h2.wp-block-heading {
+  font-family: 'Montserrat', 'Open Sans', Arial, sans-serif;
+}
 
-/* blog post on homepage */
-.blog-post h4 {
-font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
-color: #a6a6a6;
-text-transform: uppercase;
-margin: 2em 0 .5em;
+/* Blog posts and Twitter posts */
+.blog-post {
+	width: 50%;
+	float: left;
+	margin-bottom: 2em;
 }
+
+.blog-post, .twitter-widget {
+	flex-basis: 45%;
+}
+
+.blog-post h4, .twitter-widget h4  {
+    font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+    color: #a6a6a6;
+    text-transform: uppercase;
+    margin: 2em 0 .5em;
+}
+
 .blog-post h3 {
-font-size: 1.5em;
+	font-size: 1.5em;
 }
+
 .read-more-link {
-  font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
-color: #45ac9d;
-text-transform: uppercase;
+	font-family: 'Montserrat';
+	font-weight: 700;
+	color: #45ac9d;
+	text-transform: uppercase;
 }
+
+a.follow-up-link {
+	font-family: 'Montserrat';
+	font-weight: 700;
+	color: #45ac9d;
+	text-transform: uppercase;
+}
+
+.twitter-widget {
+  width: 45%;
+  float: left;
+  margin-bottom: 2em;
+  margin-left: 40px;
+}
+
+
+.homepage-bottom {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+
+.ctf-more span {
+	font-family: 'Montserrat';
+	font-weight: 700;
+	color: #45ac9d;
+	text-transform: uppercase;
+}
+
 
 /*Case Studies*/
 .case-study {
@@ -131,7 +179,7 @@ aside.about-page-sidebar {
 }
 
 aside.about-page-sidebar img {
-  padding-right: 75px;
+  padding: 10px;
 }
 
 
@@ -139,6 +187,24 @@ aside.about-page-sidebar-text {
   width: 60%;
 }
 
+aside.about-page-sidebar-2 {
+  display: flex;
+  justify-content: right;
+  align-items: flex-start;
+  flex-flow: row-reverse;
+  text-align: left;
+  margin-bottom: 70px;
+}
+
+aside.about-page-sidebar-2 img {
+  padding: 10px;
+  height: 90%;
+  width: 90%;
+}
+
+aside.about-page-sidebar-text-2 {
+  width: 60%;
+}
 
 div.about-contact{
   float:left;
@@ -189,6 +255,61 @@ ul.about-contact-blurb a.button {
 */
 /* END About Page */
 
+/* Error Page */
+
+div.error-page h1 {
+  font-family: 'Metamorphous', serif;
+}
+
+ul.error-contact-blurb ul {
+  list-style: disc;
+  margin: 0;
+}
+
+aside.error-page-sidebar a {
+  color: #45ac9d;
+  font-weight: bold;
+
+}
+
+aside.error-page-sidebar h2 {
+  font-family: 'Metamorphous', serif;;
+}
+/* END Error Page */
+
+/* Blog Contact Form */
+
+input[type=submit] {
+  background-color: #45ac9d;
+  padding: 0 2em;
+}
+
+input[type=button], input[type=submit] {
+  font: 700 1em / 1 montserrat, opensans, Arial, sans-serif;
+  color: #fff;
+  background: #45ac9d;
+  border: none;
+  padding: 1em 3.75em;
+  text-align: center;
+}
+
+input {
+  font: 1em opensans, Arial, sans-serif;
+  line-height: 2;
+  height: 2.3125em;
+  border: 1px solid #bfbfbf;
+  margin: 0;
+  padding: .3em .625em;
+  background: #fff;
+  vertical-align: middle;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 /* Media Queries */
 @media (min-width: 768px) {
   .featured-work .site-content {
@@ -200,9 +321,15 @@ ul.about-contact-blurb a.button {
       padding: 0 .5em;
   }
   .blog-post {
-    width: 50%;
+    width: 45%;
     float: left;
       margin-bottom: 2em;
+  }
+
+  .twitter-widget {
+    width: 45%;
+    float: right;
+    margin-bottom: 2em;
   }
   aside.case-study-sidebar {
       float: left;
@@ -214,3 +341,4 @@ ul.about-contact-blurb a.button {
       width: 60%;
   }
 }
+

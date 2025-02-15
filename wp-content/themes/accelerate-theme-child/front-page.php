@@ -32,12 +32,17 @@ get_header(); ?>
 		<!-- the loop -->
 			<?php while ( have_posts() ) : the_post();
 				$image_1 = get_field("image_1");
+				$image_4 = get_field("image_4");
+				$image_5 = get_field("image_5");
 				$size = "medium";
 			?>
 			<li class="individual-featured-work">
 				<a href="<?php the_permalink(); ?>">
 					<figure>
 						<?php echo wp_get_attachment_image($image_1, $size); ?>
+						<?php echo wp_get_attachment_image($image_4, $size); ?>
+						<?php echo wp_get_attachment_image($image_5, $size); ?>
+				
 					</figure>
 					<h3><?php the_title(); ?></h3>
 				</a>
@@ -47,10 +52,11 @@ get_header(); ?>
 		</ul>
 	</div>
 </section>
+  
 
 <!-- RECENT BLOG POST -->
-<section class="recent-posts">
-	<div class="site-content">
+<section class="recent-posts-twitter">
+	<div class="site-content homepage-bottom">
 		<div class="blog-post">
 			<h4>From the Blog</h4>
 			<?php query_posts('posts_per_page=1'); ?>
@@ -61,7 +67,20 @@ get_header(); ?>
 				<?php endwhile; // end of the loop. ?>
 			<?php wp_reset_query(); // resets the altered query back to the original ?>
 		</div>
+		<div class="twitter-widget">
+				<h4>Recent Tweet</h4>
+				<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+				<div id="secondary" class="widget-area" role="complementary">
+					<?php dynamic_sidebar( 'sidebar-2' ); ?>
+				</div>
+		<?php endif; ?>
+		<a class="read-more-link" target="_blank" href="https://x.com/skillcrush?lang=en">Follow Us></a> 
+		</div>
 	</div>
 </section>
+
+
+
+
 
 <?php get_footer(); ?>

@@ -13,6 +13,8 @@ get_header(); ?>
 		<div class="main-content" role="main">
 	<?php while ( have_posts() ) : the_post();
 			$image_1 = get_field("image_1");
+			$image_4 = get_field("image_4");
+			$image_5 = get_field("image_5");
 			$size = "full";
 			$services = get_field('services'); ?>
 
@@ -30,6 +32,21 @@ get_header(); ?>
 						echo wp_get_attachment_image( $image_1, $size );
 					} ?>
 				</a>
+
+				<a href="<?php the_permalink(); ?>">
+					<?php if($image_4) {
+						echo wp_get_attachment_image( $image_4, $size );
+					} ?>
+				</a>
+
+				<a href="<?php the_permalink(); ?>">
+					<?php if($image_5) {
+						echo wp_get_attachment_image( $image_5, $size );
+					} ?>
+				</a>
+
+
+
 			</div>
 		</article>
 	<?php endwhile; // end of the loop. ?>

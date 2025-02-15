@@ -1,0 +1,253 @@
+/*
+ Theme Name:   Accelerate Theme Child
+ Theme URI:    http://example.com/accelerate-theme-child/
+ Description:  Accelerate Child Theme - Accelerate
+ Author:       Your Name!
+ Author URI:   http://example.com
+ Template:     accelerate-theme
+ Version:      2.0.0
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  accelerate-theme-child
+*/
+
+.home-page {
+  background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+}
+#masthead {
+  background: none repeat scroll 0 0 #45ac9d;
+}
+.button {
+background: none repeat scroll 0 0 #45ac9d;
+}
+
+/* featured work on homepage */
+.featured-work .site-content {
+  margin: 6em auto;
+}
+.featured-work h4 {
+  font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+text-align: center;
+text-transform: uppercase;
+margin-bottom: 2.25em;
+}
+.homepage-featured-work {
+list-style: none;
+margin: 0 auto;
+padding: 0;
+text-align: center;
+width: 100%;
+}
+.individual-featured-work {
+  margin-bottom: 2em;
+}
+.individual-featured-work a {
+display: block;
+}
+.individual-featured-work h3 {
+  font: 500 1em/1.75 'Open Sans', Arial, sans-serif;
+}
+
+
+/* blog post on homepage */
+.blog-post h4 {
+font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+color: #a6a6a6;
+text-transform: uppercase;
+margin: 2em 0 .5em;
+}
+.blog-post h3 {
+font-size: 1.5em;
+}
+.read-more-link {
+  font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+color: #45ac9d;
+text-transform: uppercase;
+}
+
+/*Case Studies*/
+.case-study {
+  clear: both;
+}
+.case-study h2 {
+  font: 700 1.5em/1.5 'Open Sans Semibold';
+}
+.case-study h4 {
+  font: 400 .875em/1.25 'Open Sans';
+  margin: 1em 0;
+}
+.case-study h4 span {
+  color: #878787;
+}
+.case-study-sidebar p {
+  margin: 2em 0;
+}
+div.case-study-images {
+margin-top: 3em;
+}
+div.case-study-images img {
+  width: 100%;
+margin-bottom: 3.125em;
+border: 1px solid #dddddd;
+width: 100%;
+height: auto;
+}
+
+/*END Case Studies*/
+
+/* About Page */
+
+
+
+.hero-content h2 {
+	color: #fff;
+  font-family: "Open Sans";
+	font-size: 1.2em;
+  font-weight: 600;
+  line-height: 1.5;
+	margin: 0 auto;
+  max-width: 70%;
+}
+
+.services-intro{
+  text-align: center;
+  margin:0 0 3.75rem;
+}
+
+.services-intro h3{
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.our-services-container{
+  margin:20px 0;
+}
+aside.about-page-sidebar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row;
+  text-align: left;
+  margin-bottom: 70px;
+}
+
+aside.about-page-sidebar img {
+  padding: 10px;
+}
+
+
+aside.about-page-sidebar-text {
+  width: 60%;
+}
+
+aside.about-page-sidebar-2 {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  flex-flow: row-reverse;
+  text-align: left;
+  margin-bottom: 70px;
+}
+
+aside.about-page-sidebar-2 img {
+  padding: 10px;
+  height: 90%;
+  width: 90%;
+}
+
+aside.about-page-sidebar-text-2 {
+  width: 60%;
+}
+
+div.about-contact{
+  float:left;
+  width:100%;
+  height:auto;
+  border-top: 1px solid #bfbfbf;
+  margin:20px auto;
+  text-align: center;
+}
+
+ul.about-contact-blurb{
+  list-style: none;
+  margin:0 auto;
+  width:66%;
+  padding-top: 1.25rem;
+}
+
+ul.about-contact-blurb li{
+  display: inline-block;
+  padding-right: 1.25rem;
+}
+
+ul.about-contact-blurb a.button{
+  padding:1em 2em;
+}
+
+/*
+ul.about-contact-blurb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row;
+  border-top: 1px solid #bfbfbf;
+  margin:0 460px;
+  max-width: 960px;;
+  
+}
+
+ul.about-contact-blurb h3 {
+  margin-right: 30px;
+  font-size: 1.125em;
+}
+
+ul.about-contact-blurb a.button {
+  margin-left: 20px;
+  margin-top: 25px;
+}
+*/
+/* END About Page */
+
+/* Error Page */
+
+ul.error-contact-blurb ul {
+  list-style: disc;
+  margin: 0;
+}
+
+aside.error-page-sidebar  h1, h2, h3 {
+  font-family: "Metamorphous", serif;
+}
+
+aside.error-page-sidebar a {
+  color: #45ac9d;
+  font-weight: bold;
+
+}
+/* END Error Page */
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .featured-work .site-content {
+      margin: auto auto 3em;
+  }
+  .individual-featured-work {
+    float: left;
+      width: 33%;
+      padding: 0 .5em;
+  }
+  .blog-post {
+    width: 50%;
+    float: left;
+      margin-bottom: 2em;
+  }
+  aside.case-study-sidebar {
+      float: left;
+      width: 34%;
+      margin: 0 6% 0 0;
+  }
+  div.case-study-images {
+      float: left;
+      width: 60%;
+  }
+}
+

@@ -14,7 +14,6 @@ get_header(); ?>
 
 <div id="main" class="site-main clearfix">
 
-
 <div id="primary" class="home-page hero-content">
 	<div class="main-content" role="main">
                             <div class="about-hero">
@@ -28,10 +27,10 @@ get_header(); ?>
 		<div class="main-content" role="main">
 							<div class = "services-intro">
 					<h3>Our Services</h3>
-					<p><p style="text-align: center;">We take pride in our clients and the services we create for them.<br>
+					<p style="text-align: center;">We take pride in our clients and the services we create for them.<br>
 Here is a brief overview of our offered services.</p>
-<p>&nbsp;</p>
-</p>
+
+
 	</div>
 
 	<?php while ( have_posts() ) : the_post();
@@ -48,60 +47,63 @@ Here is a brief overview of our offered services.</p>
 		$size = "full";
 		?>
 
-	<article class="about-page-sidebar clearfix">
+	<article class="about-page-sidebar">
 		<aside class="about-page-sidebar">
-		<div class="our-services-image-left">
 		<?php echo wp_get_attachment_image($image_1, $size); ?>
-			</div> 
 			<div class="about-page-sidebar-text">
 				<h3><span><?php echo $subheading_1;?></span></h3>
 				<p><?php echo $description; ?></p>
 		</div>
 		</aside>
 
-		<aside class="about-page-sidebar">
+
+		
+		<aside class="about-page-sidebar-2">
 		<?php echo wp_get_attachment_image($image_2, $size); ?>
-			<div class="about-page-sidebar-text">
+			<div class="about-page-sidebar-text-2">
 				<h3><span><?php echo $subheading_2;?></span></h3>
 				<p><?php echo $description; ?></p>
-			</div>
+		</div>
 		</aside>
+	
 
+		
 		<aside class="about-page-sidebar">
 		<?php echo wp_get_attachment_image($image_3, $size); ?>
 			<div class="about-page-sidebar-text">
 				<h3><span><?php echo $subheading_3;?></span></h3>
 				<p><?php echo $description; ?></p>
-			</div>
+		</div>
 		</aside>
+		
 
-		<aside class="about-page-sidebar">
+	
+		<aside class="about-page-sidebar-2">
 		<?php echo wp_get_attachment_image($image_4, $size); ?>
-			<div class="about-page-sidebar-text">
+			<div class="about-page-sidebar-text-2">
 				<h3><span><?php echo $subheading_4;?></span></h3>
 				<p><?php echo $description; ?></p>
-			</div>
-		</aside>
-
-			</div>
 		</div>
-	</article>
-		<?php endwhile; // end of the loop. ?>
+		</aside>
+</article>
+		
+
+	<?php endwhile; // end of the loop. ?>
 
 		<div class= "about-contact clearfix">
 			<ul class="about-contact-blurb">
 				<li><h2>Interested in working with us?</h2></li>
-				<li><a class="button" href="http://localhost/accelerate/contact">Contact Us</a></li>
+				<li><a class="button" href="https://accelerate.kellyselcher.com/contact-us/">Contact Us</a></li>
 			</ul>
 		</div>
 	</div><!-- .main-content -->
-
-
+	
 	</div><!-- #primary -->
 
+</div>
 
-		</div><!-- #main -->
+</div>
+	
 
 <?php get_footer(); ?>
-
 

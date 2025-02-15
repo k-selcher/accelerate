@@ -93,7 +93,7 @@ Here is a brief overview of our offered services.</p>
 		<div class= "about-contact clearfix">
 			<ul class="about-contact-blurb">
 				<li><h2>Interested in working with us?</h2></li>
-				<li><a class="button" href="http://localhost/accelerate/contact">Contact Us</a></li>
+				<li><a class="button" href="https://accelerate.kellyselcher.com/contact-us/">Contact Us</a></li>
 			</ul>
 		</div>
 	</div><!-- .main-content -->

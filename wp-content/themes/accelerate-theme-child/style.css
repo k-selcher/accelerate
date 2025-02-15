@@ -47,17 +47,60 @@ display: block;
   font: 500 1em/1.75 'Open Sans', Arial, sans-serif;
 }
 
+h2.wp-block-heading {
+  font-family: 'Montserrat', 'Open Sans', Arial, sans-serif;
+}
 
-/* blog post on homepage */
-.blog-post h4 {
-font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
-color: #a6a6a6;
-text-transform: uppercase;
-margin: 2em 0 .5em;
+/* Blog posts and Twitter posts */
+.blog-post {
+	width: 50%;
+	float: left;
+	margin-bottom: 2em;
 }
+
+.blog-post h4, .twitter-widget h4  {
+    font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+    color: #a6a6a6;
+    text-transform: uppercase;
+    margin: 2em 0 .5em;
+}
+
+.twitter-widget h4 {
+  font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+  color: #a6a6a6;
+  text-transform: uppercase;
+  margin: 2em 0 .5em;
+}
+
 .blog-post h3 {
-font-size: 1.5em;
+	font-size: 1.5em;
 }
+
+.read-more-link {
+	font-family: 'Montserrat';
+	font-weight: 700;
+	color: #45ac9d;
+	text-transform: uppercase;
+}
+
+.homepage-bottom {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.blog-post, .twitter-widget {
+	flex-basis: 45%;
+}
+
+.ctf-more span {
+	font-family: 'Montserrat';
+	font-weight: 700;
+	color: #45ac9d;
+	text-transform: uppercase;
+}
+
 .read-more-link {
   font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
 color: #45ac9d;
@@ -207,6 +250,28 @@ ul.about-contact-blurb a.button {
 */
 /* END About Page */
 
+/* Error Page */
+
+div.error-page h1 {
+  font-family: 'Metamorphous', serif;
+}
+
+ul.error-contact-blurb ul {
+  list-style: disc;
+  margin: 0;
+}
+
+aside.error-page-sidebar a {
+  color: #45ac9d;
+  font-weight: bold;
+
+}
+
+aside.error-page-sidebar h2 {
+  font-family: 'Metamorphous', serif;;
+}
+/* END Error Page */
+
 /* Media Queries */
 @media (min-width: 768px) {
   .featured-work .site-content {
@@ -218,9 +283,15 @@ ul.about-contact-blurb a.button {
       padding: 0 .5em;
   }
   .blog-post {
-    width: 50%;
+    width: 45%;
     float: left;
       margin-bottom: 2em;
+  }
+
+  .twitter-widget {
+    width: 45%;
+    float: right;
+    margin-bottom: 2em;
   }
   aside.case-study-sidebar {
       float: left;
@@ -232,3 +303,4 @@ ul.about-contact-blurb a.button {
       width: 60%;
   }
 }
+

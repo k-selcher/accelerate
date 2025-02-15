@@ -20,6 +20,8 @@ get_header(); ?>
 		$image_1 = get_field('image_1');
 		$image_2 = get_field('image_2');
 		$image_3 = get_field('image_3');
+		$image_4 = get_field('image_4');
+		$image_5 = get_field('image_5');
 		$size = "full";
 		?>
 
@@ -28,7 +30,7 @@ get_header(); ?>
 			<h2><?php the_title(); ?></h2>
 			<h4><span><?php echo $services; ?></span></h4>
 			<h4>Client: <?php echo $client; ?></h4>
-			<
+			
 
 			<?php the_content(); ?>
 
@@ -36,6 +38,8 @@ get_header(); ?>
 
 			<p class="read-more-link"><a href="<?php echo $link; ?>">Visit Live Site &rsaquo;</a></p>
 		</aside>
+
+
 
 		<div class="case-study-images">
 			<?php if($image_1) {
@@ -46,6 +50,12 @@ get_header(); ?>
 			} ?>
 			<?php if($image_3) {
 				echo wp_get_attachment_image( $image_3 );
+			} ?>
+				<?php if($image_4) {
+				echo wp_get_attachment_image( $image_4 );
+			} ?>
+				<?php if($image_5) {
+				echo wp_get_attachment_image( $image_5 );
 			} ?>
 			
 			</div>

@@ -179,11 +179,13 @@ input[type="button"],
 input[type="submit"] {
 	font: 700 1em/1 'Montserrat', 'OpenSans', Arial, sans-serif;
 	color: #fff;
-	background: #333;
 	border: none;
-	padding: 1em 3.75em;
 	text-align: center;
+	background-color: #45ac9d;
+    padding: 0 2em;
 }
+
+
 /* End MAIN STYLES */
 
 /* BODY STYLES */
@@ -203,7 +205,7 @@ body {
 	width: 100%;
 }
 #masthead {
-  background: none repeat scroll 0 0 #333;
+  background: none repeat scroll 0 0 #45ac9d;
   padding: .75em 0;
 }
 .page-header, .site-content, #navigation, .site-footer {
@@ -594,7 +596,7 @@ body {
 .button {
     font: 700 1em/1 'Montserrat', 'OpenSans', Arial, sans-serif;
     color: #fff;
-	background: #333;
+	background: #45ac9d;
     padding: 1em 3.75em;
     text-align: center;
 }
